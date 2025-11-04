@@ -6,7 +6,7 @@ comments: True
 categories: [Publications]
 ---
 
-*My Thesis is on the Interwebs*
+*My thesis is on the Interwebs!*
 
 ---
 

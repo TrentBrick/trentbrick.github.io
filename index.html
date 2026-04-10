@@ -7,41 +7,181 @@
     <style>
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            margin: 0;
-            background: #fff;
+            max-width: 650px;
+            margin: 2rem auto;
+            padding: 0 1rem;
             color: #333;
-        }
-        .container {
-            text-align: center;
-            max-width: 600px;
-            padding: 2rem;
-        }
-        h1 {
-            font-size: 2rem;
-            margin-bottom: 0.5rem;
-        }
-        p {
-            font-size: 1.1rem;
             line-height: 1.6;
-            color: #555;
         }
-        a {
-            color: #0066cc;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
+        a { color: #0066cc; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        h1 { font-size: 1.5rem; }
+        h2 { font-size: 1.2rem; margin-top: 2rem; }
+        ul { padding-left: 1.2rem; }
+        li { margin-bottom: 0.4rem; }
+        .pub { margin-bottom: 1rem; }
+        .pub-title { font-weight: bold; }
+        .pub-authors, .pub-venue, .pub-links { font-size: 0.95rem; }
+        .video-container { margin: 1rem 0; text-align: center; }
+        .video-container iframe { max-width: 100%; }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Trenton Bricken</h1>
-        <p>Member of Technical Staff, Alignment Science at <a href="https://www.anthropic.com/">Anthropic</a></p>
+    <h1>Hi, I'm Trenton.</h1>
+
+    <p>I'm a Member of Technical Staff on the Alignment Science team at <a href="https://www.anthropic.com/">Anthropic</a>. I'm currently <a href="https://alignment.anthropic.com/2025/automated-auditing/">enabling Claude to automatically audit and detect misalignment</a>.</p>
+
+    <h2>About Me</h2>
+    <ul>
+        <li>I have a PhD in Systems Biology from Harvard. My thesis was on "Sparse Representations in Biological and Artificial Neural Networks" in the <a href="http://klab.tch.harvard.edu/publications/publications.html#sthash.dUJc7Kpv.dpbs">Kreiman Lab</a> with support from the NSF Graduate Research Fellowship. I also spent time at the Berkeley <a href="https://redwood.berkeley.edu/">Redwood Center for Theoretical Neuroscience</a> as a visiting researcher.</li>
+        <li>I graduated from Duke University in May 2020 with a self-made major in "Minds and Machines: Biological and Artificial Intelligence". I was lucky to attend as a <a href="https://robertsonscholars.org/profiles/trenton-bricken/">Robertson Scholar</a>, which provided full funding during all four years, including summer experiences.</li>
+        <li>At Duke, I spent a year doing research in <a href="https://lynchlab.pratt.duke.edu">Dr. Michael Lynch's Lab</a> attempting to use machine learning to design new CRISPR guide RNAs for safer, more effective genome editing. Afterwards, I was affiliated with <a href="https://marks.hms.harvard.edu">Dr. Debora Marks's Lab</a> at Harvard Medical School applying deep learning to <a href="https://github.com/TrentBrick/learning-protein-landscapes">protein design</a>. I also contributed to the <a href="https://www.iarpa.gov/research-programs/fun-gcat">IARPA Fun GCAT</a> and <a href="https://www.darpa.mil/research/programs/biostasis">DARPA Biostasis</a> programs.</li>
+    </ul>
+
+    <p>If the world was void of both interesting research questions and global catastrophic risks(!), you'd find me backpacking around the world with my <a href="https://blitz-analog.github.io/">film camera</a>. I still try to do this when I have time off and get the chance to travel somewhere cool.</p>
+
+    <h2>Publications</h2>
+
+    <div class="pub">
+        <div class="pub-title">Cross-Architecture Model Diffing with Crosscoders: Unsupervised Discovery of Differences Between LLMs</div>
+        <div class="pub-authors">Thomas Jiralerspong, <strong>Trenton Bricken</strong></div>
+        <div class="pub-venue">arXiv, February 2026</div>
+        <div class="pub-links">[<a href="https://arxiv.org/abs/2602.11729">paper</a>] [<a href="https://x.com/AnthropicAI/status/2040179539738030182?s=20">tweet-thread</a>]</div>
     </div>
+
+    <div class="pub">
+        <div class="pub-title">Findings from a Pilot Anthropic&mdash;OpenAI Alignment Evaluation Exercise</div>
+        <div class="pub-authors">Samuel R. Bowman, Megha Srivastava, Jon Kutasov, Rowan Wang, <strong>Trenton Bricken</strong>, Benjamin Wright, Ethan Perez, and Nicholas Carlini</div>
+        <div class="pub-venue">Anthropic, August 2025</div>
+        <div class="pub-links">[<a href="https://alignment.anthropic.com/2025/openai-findings/">paper</a>] [<a href="https://x.com/sleepinyourhat/status/1960749648110395467">tweet-thread</a>]</div>
+    </div>
+
+    <div class="pub">
+        <div class="pub-title">Building and evaluating alignment auditing agents</div>
+        <div class="pub-authors"><strong>Trenton Bricken</strong>, Rowan Wang, Sam Bowman, Euan Ong, Johannes Treutlein, Jeff Wu, Evan Hubinger, Samuel Marks</div>
+        <div class="pub-venue">Anthropic, July 2025</div>
+        <div class="pub-links">[<a href="https://alignment.anthropic.com/2025/automated-auditing/">paper</a>] [<a href="https://x.com/AnthropicAI/status/1948433493102403876">tweet-thread</a>]</div>
+    </div>
+
+    <div class="pub">
+        <div class="pub-title">On the Biology of a Large Language Model</div>
+        <div class="pub-authors">Jack Lindsey†, Wes Gurnee*, Emmanuel Ameisen*, Brian Chen*, Adam Pearce*, Nicholas L. Turner*, Craig Citro*, David Abrahams, Shan Carter, Basil Hosmer, Jonathan Marcus, Michael Sklar, Adly Templeton, <strong>Trenton Bricken</strong>, Callum McDougall, Hoagy Cunningham, Thomas Henighan, Adam Jermyn, Andy Jones, Andrew Persic, Zhenyi Qi, T. Ben Thompson, Sam Zimmerman, Kelley Rivoire, Thomas Conerly, Chris Olah, Joshua Batson*</div>
+        <div class="pub-venue">Anthropic, March 2025</div>
+        <div class="pub-links">[<a href="https://arxiv.org/abs/2503.10965">paper</a>] [<a href="https://www.anthropic.com/research/tracing-thoughts-language-model">blog-post</a>] [<a href="https://x.com/AnthropicAI/status/1905303835892990278">tweet-thread</a>]</div>
+    </div>
+
+    <div class="pub">
+        <div class="pub-title">Circuit Tracing: Revealing Computational Graphs in Language Models</div>
+        <div class="pub-authors">Emmanuel Ameisen*, Jack Lindsey*, Adam Pearce*, Wes Gurnee*, Nicholas L. Turner*, Brian Chen*, Craig Citro*, David Abrahams, Shan Carter, Basil Hosmer, Jonathan Marcus, Michael Sklar, Adly Templeton, <strong>Trenton Bricken</strong>, Callum McDougall, Hoagy Cunningham, Thomas Henighan, Adam Jermyn, Andy Jones, Andrew Persic, Zhenyi Qi, T. Ben Thompson, Sam Zimmerman, Kelley Rivoire, Thomas Conerly, Chris Olah, Joshua Batson*</div>
+        <div class="pub-venue">Anthropic, March 2025</div>
+        <div class="pub-links">[<a href="https://transformer-circuits.pub/2025/attribution-graphs/methods.html">paper</a>] [<a href="https://www.anthropic.com/research/tracing-thoughts-language-model">blog-post</a>] [<a href="https://x.com/AnthropicAI/status/1905303835892990278">tweet-thread</a>]</div>
+    </div>
+
+    <div class="pub">
+        <div class="pub-title">Auditing Language Models for Hidden Objectives</div>
+        <div class="pub-authors">Samuel Marks, Johannes Treutlein, <strong>Trenton Bricken</strong>, Jack Lindsey, Jonathan Marcus, Siddharth Mishra-Sharma, Daniel Ziegler, Emmanuel Ameisen, Joshua Batson, Tim Belonax, Samuel R. Bowman, Shan Carter, Brian Chen, Hoagy Cunningham, Carson Denison, Florian Dietz, Satvik Golechha, Akbir Khan, Jan Kirchner, Jan Leike, Austin Meek, Kei Nishimura-Gasparian, Euan Ong, Christopher Olah, Adam Pearce, Fabien Roger, Jeanne Salle, Andy Shih, Meg Tong, Drake Thomas, Kelley Rivoire, Adam Jermyn, Monte MacDiarmid, Tom Henighan, Evan Hubinger</div>
+        <div class="pub-venue">Anthropic, March 2025</div>
+        <div class="pub-links">[<a href="https://arxiv.org/abs/2503.10965">paper</a>] [<a href="https://x.com/AnthropicAI/status/1900217234825634236">tweet-thread</a>]</div>
+    </div>
+
+    <div class="pub">
+        <div class="pub-title">Insights on Crosscoder Model Diffing</div>
+        <div class="pub-authors">Siddharth Mishra-Sharma, <strong>Trenton Bricken</strong>, Jack Lindsey, Adam Jermyn, Jonathan Marcus, Kelley Rivoire, Christopher Olah, Thomas Henighan</div>
+        <div class="pub-venue">Anthropic, February 2025</div>
+        <div class="pub-links">[<a href="https://transformer-circuits.pub/2025/crosscoder-diffing-update/index.html">paper</a>]</div>
+    </div>
+
+    <div class="pub">
+        <div class="pub-title">Stage-Wise Model Diffing</div>
+        <div class="pub-authors"><strong>Trenton Bricken</strong>, Siddharth Mishra-Sharma, Jonathan Marcus, Adam Jermyn, Christopher Olah, Kelley Rivoire, Thomas Henighan</div>
+        <div class="pub-venue">Anthropic, December 2024</div>
+        <div class="pub-links">[<a href="https://transformer-circuits.pub/2024/model-diffing/index.html">paper</a>] [<a href="https://x.com/TrentonBricken/status/1867102627588346350">tweet-thread</a>]</div>
+    </div>
+
+    <div class="pub">
+        <div class="pub-title">Using Dictionary Learning Features as Classifiers</div>
+        <div class="pub-authors"><strong>Trenton Bricken</strong>, Jonathan Marcus, Siddharth Mishra-Sharma, Meg Tong, Ethan Perez, Mrinank Sharma, Kelley Rivoire, Thomas Henighan; edited by Adam Jermyn</div>
+        <div class="pub-venue">Anthropic, October 2024</div>
+        <div class="pub-links">[<a href="https://transformer-circuits.pub/2024/features-as-classifiers/index.html">paper</a>] [<a href="https://x.com/TrentonBricken/status/1846652943300436030">tweet-thread</a>]</div>
+    </div>
+
+    <div class="pub">
+        <div class="pub-title">Scaling Monosemanticity: Extracting Interpretable Features from Claude 3 Sonnet</div>
+        <div class="pub-authors">Adly Templeton*, Tom Conerly*, Jonathan Marcus, Jack Lindsey, <strong>Trenton Bricken</strong>, Brian Chen, Adam Pearce, Craig Citro, Emmanuel Ameisen, Andy Jones, Hoagy Cunningham, Nicholas L Turner, Callum McDougall, Monte MacDiarmid, Alex Tamkin, Esin Durmus, Tristan Hume, Francesco Mosconi, C. Daniel Freeman, Theodore R. Sumers, Edward Rees, Joshua Batson, Adam Jermyn, Shan Carter, Chris Olah, Tom Henighan</div>
+        <div class="pub-venue">Anthropic, May 2024</div>
+        <div class="pub-links">[<a href="https://transformer-circuits.pub/2024/scaling-monosemanticity/">paper</a>] [<a href="https://www.anthropic.com/news/mapping-mind-language-model">blog-post</a>] [<a href="https://x.com/AnthropicAI/status/1792935506587656625">tweet-thread</a>]</div>
+    </div>
+
+    <div class="pub">
+        <div class="pub-title">Towards Monosemanticity: Decomposing Language Models With Dictionary Learning</div>
+        <div class="pub-authors"><strong>Trenton Bricken</strong>*, Adly Templeton*, Joshua Batson*, Brian Chen*, Adam Jermyn*, Tom Conerly, Nicholas L Turner, Cem Anil, Carson Denison, Amanda Askell, Robert Lasenby, Yifan Wu, Shauna Kravec, Nicholas Schiefer, Tim Maxwell, Nicholas Joseph, Alex Tamkin, Karina Nguyen, Brayden McLean, Josiah E Burke, Tristan Hume, Shan Carter, Tom Henighan, Chris Olah</div>
+        <div class="pub-venue">Anthropic, October 2023</div>
+        <div class="pub-links">[<a href="https://transformer-circuits.pub/2023/monosemantic-features/index.html">paper</a>] [<a href="https://www.anthropic.com/index/decomposing-language-models-into-understandable-components">blog-post</a>] [<a href="https://x.com/AnthropicAI/status/1709986949711200722?s=20">tweet-thread</a>]</div>
+    </div>
+
+    <div class="pub">
+        <div class="pub-title">Emergence of Sparse Representations from Noise</div>
+        <div class="pub-authors"><strong>Trenton Bricken</strong>*, Rylan Schaeffer, Bruno Olshausen, Gabriel Kreiman</div>
+        <div class="pub-venue">ICML, May 2023</div>
+        <div class="pub-links">[<a href="https://proceedings.mlr.press/v202/bricken23a/bricken23a.pdf">paper</a>]</div>
+    </div>
+
+    <div class="pub">
+        <div class="pub-title">Sparse Distributed Memory is a Continual Learner</div>
+        <div class="pub-authors"><strong>Trenton Bricken</strong>*, Xander Davies, Deepak Singh, Dmitry Krotov, Gabriel Kreiman</div>
+        <div class="pub-venue">ICLR, September 2022</div>
+        <div class="pub-links">[<a href="https://arxiv.org/abs/2303.11934">paper</a>] [<a href="https://twitter.com/TrentonBricken/status/1639302453295476737?s=20">tweet-thread</a>]</div>
+    </div>
+
+    <div class="pub">
+        <div class="pub-title">Attention Approximates Sparse Distributed Memory</div>
+        <div class="pub-authors"><strong>Trenton Bricken</strong>*, Cengiz Pehlevan</div>
+        <div class="pub-venue">NeurIPS, December 2021</div>
+        <div class="pub-links">[<a href="https://arxiv.org/abs/2111.05498">paper</a>] [<a href="https://twitter.com/TrentonBricken/status/1458465726503784449?s=20">tweet-thread</a>]</div>
+    </div>
+
+    <div class="pub">
+        <div class="pub-title">High-content screening of coronavirus genes for innate immune suppression reveals enhanced potency of SARS-CoV-2 proteins.</div>
+        <div class="pub-authors">Erika J Olson*, David M Brown*, Timothy Z Chang, Lin Ding, Tai L Ng, H. Sloane Weiss, Peter Koch, Yukiye Koide, Nathan Rollins, Pia Mach, Tobias Meisinger, <strong>Trenton Bricken</strong>, Joshus Rollins, Yun Zhang, Colin Molloy, Yun Zhang, Briodget N Queenan, Timothy Mitchison, Debora Marks, Jeffrey C Way, John I Glass, Pamela A Silver</div>
+        <div class="pub-venue">bioRxiv, March 2021</div>
+        <div class="pub-links">[<a href="https://www.biorxiv.org/content/10.1101/2021.03.02.433434v1">preprint</a>] [<a href="https://twitter.com/TrentonBricken/status/1367141915666317312?s=20">tweet-thread</a>]</div>
+    </div>
+
+    <div class="pub">
+        <div class="pub-title">Computationally Optimized SARS-CoV-2 MHC Class I and II Vaccine Formulations Predicted to Target Human Haplotype Distributions.</div>
+        <div class="pub-authors">Ge Liu*, Brandon Carter*, <strong>Trenton Bricken</strong>, Siddhartha Jain, Mathias Viard, Mary Carrington, David K Gifford</div>
+        <div class="pub-venue">Cell Systems, July 2020</div>
+        <div class="pub-links">[<a href="https://www.cell.com/cell-systems/fulltext/S2405-4712%2820%2930238-6#%20">paper</a>] [<a href="https://github.com/gifford-lab/optivax">code</a>] [<a href="https://www.biorxiv.org/content/10.1101/2020.05.16.088989v1">preprint</a>] [<a href="https://twitter.com/TrentonBricken/status/1262407888842170370?s=20">tweet-thread</a>]</div>
+    </div>
+
+    <p>See <a href="https://scholar.google.com/citations?user=CP6aLusAAAAJ&hl=en"><strong>Google Scholar</strong></a> for a full list of publications and citation record.</p>
+
+    <h2>Talks</h2>
+    <ul>
+        <li><a href="https://youtu.be/dEFn6nnoC-8">My PhD Defense</a> - March 2025</li>
+        <li><a href="https://www.youtube.com/watch?v=L4DC7e6g2iI&ab_channel=StanfordOnline">Stanford CS 25: Transformers United V2</a> - March 2023</li>
+        <li><a href="https://www.youtube.com/watch?v=DrJ2SRdMPUg">Vector Symbolic Architectures Webinar Series</a> - September 2022</li>
+        <li><a href="https://redwood.berkeley.edu/">Redwood Center for Theoretical Neuroscience</a> - May 2022</li>
+        <li><a href="https://www.youtube.com/watch?v=THIIk7LR9_8&ab_channel=MITCBMM">MIT Center for Brains Minds+ Machines</a> - November 2021</li>
+    </ul>
+
+    <div class="video-container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/THIIk7LR9_8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+    <h2>Podcasts</h2>
+
+    <div class="video-container">
+        <p>Dwarkesh Podcast (2025):</p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/64lXQP6cs5M?si=oKj2GeM6QqTXY30C" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+
+    <div class="video-container">
+        <p>Dwarkesh Podcast (2024):</p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/UTuuTTnjxMQ?si=h5v-7OqUiqnXq4xI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+
+    <h2>Contact</h2>
+    <p>I am pretty active on <a href="https://twitter.com/TrentonBricken">Twitter</a>. My DMs are open and you should feel free to reach out but I can't promise I'll be good at replying! I sometimes upload my film photography to <a href="https://www.instagram.com/blitz_analog">Instagram</a> and to my <a href="https://blitz-analog.github.io/">portfolio</a>.</p>
 </body>
 </html>
